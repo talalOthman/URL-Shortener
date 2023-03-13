@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from 'vue'
+import { ref } from 'vue'
 import axios from 'axios'
 
 const API_URL = 'https://api-ssl.bitly.com/v4/shorten'
