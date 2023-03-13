@@ -18,6 +18,10 @@ const onSubmit = async () => {
   })
   shortenedLink.value = response.data.link
 }
+
+const onCopy = () => {
+  navigator.clipboard.writeText(shortenedLink.value)
+}
 </script>
 
 <template>
@@ -25,6 +29,9 @@ const onSubmit = async () => {
     <input v-model="link" placeholder="Enter Link Here">
     <button>Shorten Link</button>
   </form>
-  <p>{{ shortenedLink }}</p>
+  <div>
+    <p>{{ shortenedLink }}</p>
+    <button @click="onCopy">Copy Shortened Link</button>
+  </div>
 </template>
 
