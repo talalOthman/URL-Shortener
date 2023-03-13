@@ -35,7 +35,7 @@ const onCopy = () => {
     <div v-if="isLinkGenerated" class="flex flex-col items-center gap-y-2">
       <div class="bg-white border border-gray-400 rounded py-2 px-4 mt-4">
         <p class="text-gray-800 font-semibold">Shortened Link:</p>
-        <a href="#" class="text-blue-500 hover:text-blue-700 font-medium">{{ shortenedLink }}</a>
+        <a :href="shortenedLink" class="text-blue-500 hover:text-blue-700 font-medium">{{ shortenedLink }}</a>
       </div>
       <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" @click="onCopy">Copy Shortened
         Link</button>
