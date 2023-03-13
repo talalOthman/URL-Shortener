@@ -1,14 +1,17 @@
-# link-shortener
+# URL Shortener
 
-This template should help get you started developing with Vue 3 in Vite.
+URL Shortener is a simple web application that allows users to shorten long URLs into shorter, more manageable links. This application is built using Vue.js, axios, and the bitly API, with styling done using Tailwind CSS.
 
-## Recommended IDE Setup
+## How to Use
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+1. Enter the long URL that you want to shorten into the input field on the main page.
+2. Click the "Shorten Link" button to generate a shortened link.
+3. The shortened link will be displayed below the input field.
+4. Click the "Copy Shortened Link" button to copy the shortened link to your clipboard.
 
-## Customize configuration
+## Accessing the Project
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+You can access the live version of the project by visiting https://bit.ly/3Tbwc3E.
 
 ## Project Setup
 
