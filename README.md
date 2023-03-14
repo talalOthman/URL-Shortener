@@ -1,6 +1,6 @@
 # URL Shortener
 
-URL Shortener is a simple web application that allows users to shorten long URLs into shorter, more manageable links. This application is built using Vue.js, axios, and the bitly API, with styling done using Tailwind CSS.
+URL Shortener is a simple web application that allows users to shorten long URLs into shorter, more manageable links. This application is built using Vue.js, axios, with styling done using Tailwind CSS.
 
 ## How to Use
 
