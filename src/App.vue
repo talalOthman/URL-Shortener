@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import axios from 'axios'
 
-const API_URL = 'https://api-ssl.bitly.com/v4/shorten'
+const API_URL = 'https://url-shortener-service.p.rapidapi.com/shorten'
 const link = ref()
 const shortenedLink = ref()
 const copyButton = ref('Copy Shortened Link')
@@ -10,15 +10,16 @@ const isLinkGenerated = ref(false)
 
 const onSubmit = async () => {
   const response = await axios.post(API_URL, {
-    long_url: link.value,
-    domain: 'bit.ly',
+    url: link.value
   }, {
     headers: {
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer 90ed93ecb8217e196a639ab725cf0af8659eb580'
+      'content-type': 'application/x-www-form-urlencoded',
+      'X-RapidAPI-Key': 'ffa899c765msh8c6c4802415ff36p18a85ejsn5a1ca67e1269',
+      'X-RapidAPI-Host': 'url-shortener-service.p.rapidapi.com'
     }
   })
-  shortenedLink.value = response.data.link
+  console.log
+  shortenedLink.value = response.data.result_url
   isLinkGenerated.value = true
 }
 
@@ -52,7 +53,7 @@ const onCopy = () => {
       </div>
       <button
         class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded transition duration-200 ease-in-out transform hover:scale-105 mt-4"
-        @click="onCopy">{{copyButton}}</button>
+        @click="onCopy">{{ copyButton }}</button>
     </div>
   </div>
 </template>
