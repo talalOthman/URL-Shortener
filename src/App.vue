@@ -14,7 +14,7 @@ const onSubmit = async () => {
   }, {
     headers: {
       'content-type': 'application/x-www-form-urlencoded',
-      'X-RapidAPI-Key': 'ffa899c765msh8c6c4802415ff36p18a85ejsn5a1ca67e1269',
+      'X-RapidAPI-Key': import.meta.env.VITE_API_KEY,
       'X-RapidAPI-Host': 'url-shortener-service.p.rapidapi.com'
     }
   })
