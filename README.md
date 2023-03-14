@@ -11,7 +11,7 @@ URL Shortener is a simple web application that allows users to shorten long URLs
 
 ## Accessing the Project
 
-You can access the live version of the project by visiting https://bit.ly/3Tbwc3E.
+You can access the live version of the project by visiting https://goolnk.com/PkQG8r.
 
 ## Project Setup
 
