@@ -18,7 +18,6 @@ const onSubmit = async () => {
       'X-RapidAPI-Host': 'url-shortener-service.p.rapidapi.com'
     }
   })
-  console.log
   shortenedLink.value = response.data.result_url
   isLinkGenerated.value = true
 }
@@ -34,7 +33,7 @@ const onCopy = () => {
 
 <template>
   <div
-    class="flex flex-col justify-center items-center gap-y-7	border border-gray-300 h-screen bg-gradient-to-br from-blue-200 to-blue-300">
+    class="flex flex-col justify-center items-center gap-y-7 border border-gray-300 absolute inset-0 bg-gradient-to-br from-blue-200 to-blue-300">
     <div class="flex flex-col items-center">
       <h1 class="text-3xl font-bold text-gray-800 mb-4">URL Shortener</h1>
       <p class="text-gray-700 text-lg text-center">Enter a long URL below to generate a shortened link</p>
